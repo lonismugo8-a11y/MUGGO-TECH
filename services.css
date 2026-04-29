@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background: #f5f6fa;
+    color: #333;
+}
+
+/* HEADER */
+.page-header {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.page-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* SERVICES GRID */
+.services-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #0d47a1;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.price-tag {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #0d47a1;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: #0d47a1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #092f6d;
+}
+
+/* WHATSAPP FLOATING BUTTON */
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.whatsapp-float:hover {
+    background: #1ebe5d;
+}

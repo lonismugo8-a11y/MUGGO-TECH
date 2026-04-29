@@ -1,0 +1,244 @@
+/* ------------------------------
+   GLOBAL STYLE
+--------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   HEADER / NAVBAR
+--------------------------------*/
+header {
+    background: #0a1a3c;
+    padding: 20px 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFB200;
+}
+
+/* ------------------------------
+   HERO SECTION
+--------------------------------*/
+.about-hero {
+    background: linear-gradient(rgba(10, 26, 60, 0.7), rgba(10, 26, 60, 0.7)),
+                url('images/about-bg.jpg') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.about-hero h1 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    animation: fadeInDown 1.2s;
+}
+
+.about-hero p {
+    font-size: 18px;
+    margin-top: 15px;
+    width: 60%;
+    animation: fadeIn 2s;
+}
+
+/* ------------------------------
+   ABOUT CONTENT
+--------------------------------*/
+.about-section {
+    width: 90%;
+    margin: 60px auto;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #0a1a3c;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* ------------------------------
+   MISSION & VISION BOXES
+--------------------------------*/
+.cards {
+    margin: 60px auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    border-left: 5px solid #0a1a3c;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.17);
+}
+
+.card h3 {
+    color: #0a1a3c;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+/* ------------------------------
+   TEAM SECTION
+--------------------------------*/
+.team-section {
+    width: 90%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #0a1a3c;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.team-member {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #0a1a3c;
+}
+
+.team-member h3 {
+    color: #0a1a3c;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+footer {
+    background: #0a1a3c;
+    padding: 25px 0;
+    margin-top: 60px;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/* ------------------------------
+   ANIMATIONS
+--------------------------------*/
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ------------------------------
+   RESPONSIVE FIXES
+--------------------------------*/
+@media(max-width: 768px) {
+    .about-hero h1 {
+        font-size: 34px;
+    }
+    .about-hero p {
+        width: 85%;
+        font-size: 16px;
+    }
+}
